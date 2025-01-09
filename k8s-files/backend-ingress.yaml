@@ -24,10 +24,3 @@ spec:
             port:
               number: 8000  # Port for the backend (Django)
 
-      - path: /argocd  # Expose ArgoCD UI under '/argocd' path
-        pathType: Prefix
-        backend:
-          service:
-            name: argocd-server  # ArgoCD service name
-            port:
-              number: 443  # ArgoCD service port
